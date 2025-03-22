@@ -3,7 +3,7 @@ little book about understanding programming
 
 ** Chapters
 
-- Introduction
+- [[file:chapters/intro.org][Introduction]]
 - Understanding decision statments
   - If, If..else, If..else if, Nested statement, switch, logical statment
   - Flow chart
