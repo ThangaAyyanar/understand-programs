@@ -31,3 +31,21 @@ class Sample {
 
 [[file:assets/simple-if.png]]
 
+** If else 
+
+#+begin_src java
+class Sample {
+    public static void main(String[] args) {
+	String s = "hello";
+        if (s.equals(s)) {
+	    System.out.println("True statement");	    
+	} else {
+	    System.out.println("False statment");
+	}
+    }
+}
+#+end_src
+
+** Flow chart
+
+[[file:assets/if-else.png]]
