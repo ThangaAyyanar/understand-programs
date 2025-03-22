@@ -1,0 +1,33 @@
+* Decision statment
+
+Decision statements are parts of a program that let it choose what to
+do based on certain conditions. They help the program make choices and
+follow different paths depending on whether something is true or
+false.
+
+You can use print statements to understand how if statements work. To
+visualize decision statements, we can use flowcharts.
+
+Let's explore a few examples of different decision statements using
+print statements and flowcharts.
+
+** Simple if
+
+Execute the below program and check whether the decision statement
+block is executed or not
+
+#+begin_src java
+class Sample {
+    public static void main(String[] args) {
+        String s = "hello";
+	if (s.equals("hello")) {
+	    System.out.println("True statement");	    
+	}
+    }
+}
+#+end_src
+
+** Flow chart
+
+[[file:assets/simple-if.png]]
+
