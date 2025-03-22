@@ -1,0 +1,57 @@
+* Loops
+
+A loop is a programming structure that allows a set of instructions to
+be repeated multiple times until a certain condition is met. It helps
+automate repetitive tasks by executing the same code block repeatedly,
+making programs more efficient and concise.
+
+To understand loops, we can use print statements, but we need to
+adjust them slightly to print a table. We can also use flowcharts to
+visualize loops, but while this works well for simple cases, it
+becomes more complicated for nested loops.
+
+** Iteration table
+
+Let's see some examples, which prints loop counter
+#+begin_src java
+class Sample {
+    public static void main(String[] args) {
+	for (int i = 0; i <= 10; i++) {
+	    System.out.println(i);
+	}
+    }
+}
+#+end_src
+
+#+begin_example
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+#+end_example
+
+Let's use iteration table to understand how this loop works
+
+| i = 0 | i<=10         | System.out.println(i) | i++ |
+|-------+---------------+-----------------------+-----|
+|     0 | i<=0          |                     0 |   1 |
+|     1 | i<=1          |                     1 |   2 |
+|     2 | i<=2          |                     2 |   3 |
+|     3 | i<=3          |                     3 |   4 |
+|     4 | i<=4          |                     4 |   5 |
+|     5 | i<=5          |                     5 |   6 |
+|     6 | i<=6          |                     6 |   7 |
+|     7 | i<=7          |                     7 |   8 |
+|     8 | i<=8          |                     8 |   9 |
+|     9 | i<=9          |                     9 |  10 |
+|    10 | i<=10         |                    10 |  11 |
+|    11 | i<=11 (false) |                       |     |
+|-------+---------------+-----------------------+-----|
+
