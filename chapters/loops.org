@@ -55,3 +55,18 @@ Let's use iteration table to understand how this loop works
 |    11 | i<=11 (false) |                       |     |
 |-------+---------------+-----------------------+-----|
 
+we can use paper and pencil to create above table but we can also
+inject/write some print statement to create table
+
+#+begin_src java
+class Sample {
+    public static void main(String[] args) {
+	System.out.println("| i = 0 | i<=10 | System.out.println(i) | i++ |");
+	for (int i = 0; i <= 10; i++) {
+	    String myStr = "| %d | i<=%d | %d | %d |";
+	    String result = String.format(myStr, i, i, i, i+1);
+	    System.out.println(result);
+	}
+    }
+}
+#+end_src
