@@ -1,0 +1,27 @@
+* Introduction
+
+This book is designed for individuals with a basic understanding of
+programming who may find complex concepts intimidating or struggle
+with algorithms.
+
+We won't cover the basics, such as variable declarations, if
+statements, or for loops. Readers should already be familiar with
+these fundamental concepts.
+
+This book focuses on the Java programming language.
+
+If you can run the program below on your system and see the expected
+output, you can move on to Chapter 2.
+
+#+begin_src java
+class Sample {
+    public static void main(String[] args) {
+	System.out.println("Hello world");
+    }
+}
+#+end_src
+
+#+begin_example
+Hello world
+#+end_example
+
