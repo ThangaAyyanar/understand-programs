@@ -4,11 +4,11 @@ little book about understanding programming
 ** Chapters
 
 - [[file:chapters/intro.org][Introduction]]
-- Understanding decision statments
+- [[file:chapters/decision.org][Understanding decision statments]]
   - If, If..else, If..else if, Nested statement, switch, logical statment
   - Flow chart
   - Using print statement
-- Understanding iteration(Loops)
+- [[file:chapters/loops.org][Understanding iteration(Loops)]]
   - Reason for using loop (It is technic)
   - Flow chart
   - Iteration table
