@@ -1,0 +1,20 @@
+* REPL
+
+REPL stands for Read-Eval-Print Loop. It is an interactive programming
+environment that allows users to enter code, execute it, and see the
+results immediately. REPLs are commonly used in various programming
+languages for testing, debugging, and learning.
+
+How REPL Works
+
+- Read: The REPL reads the user's input (code).
+- Eval: It evaluates the input, executing the code.
+- Print: The result of the evaluation is printed to the screen.
+- Loop: The process repeats, allowing the user to enter more code.
+
+
+#+begin_src shell
+  jshell
+#+end_src
+
+- Jshell can be used to browse through documentation
