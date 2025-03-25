@@ -12,11 +12,13 @@ little book about understanding programming
   - Reason for using loop (It is technic)
   - Flow chart
   - Iteration table
-	- Using print statmenet
-- Understanding recursion
-- Debugging
+    - Using print statmenet
+- [[file:chapters/recursion.org][Understanding recursion]]
+- [[file:chapters/logging.org][Logging]]
+- [[file:chapters/debugging.org][Debugging]]
+- [[file:chapters/documentation.org][Documentation]]
+- [[file:chapters/repl.org][REPL]]
 - Testing
-- Documentation
 - Profiling
 
 ** Misc
