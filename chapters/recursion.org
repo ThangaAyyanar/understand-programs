@@ -1,0 +1,129 @@
+* Recursion
+
+Before we try to understand recursion. we will go through few examples
+in functions.
+
+** Function
+In programming, a function is a reusable block of code that performs a
+specific task. Functions allow you to encapsulate logic, making your
+code more organized, modular, and easier to maintain.
+
+#+begin_src java
+  public class SimpleFunction {
+
+    static int add(int x, int y) {
+	return x+y;
+    }
+    
+    public static void main(String[] args) {
+	System.out.println("Sum of two number is "+SimpleFunction.add(3,4));
+    }
+}
+
+#+end_src
+
+How to visualize or understand functions ?
+
+#+begin_example
+Main
+  add(4,3) => 7
+#+end_example
+
+** Recursion
+Recursion is a programming concept where a function calls itself to
+solve a problem. In simple terms, it's like a process where you break
+a big problem into smaller, similar problems until you reach a point
+where the problem is simple enough to solve directly.
+
+- Base condition (To stop recursion)
+- Recursive case
+
+#+begin_src java
+  public class SimpleFunction {
+
+    static int fact(int n) {
+	int result;
+        if (n == 1)
+            return 1;
+        result = fact(n - 1) * n;
+        return result;
+    }
+    
+    public static void main(String[] args) {
+	System.out.println("Factorial of number is "+SimpleFunction.fact(3));
+    }
+}
+#+end_src
+
+#+begin_example
+Main            => 6 
+  fact(2) * 3   => 1*2*3
+    fact(1) * 2 => 1*2
+#+end_example
+
+- Programmatically print the above function tree
+#+begin_src java
+  public class SimpleFunction {
+
+    static int fact(int n, int depth) {
+	int result;
+        if (n == 1)
+            return 1;
+	String space = "  ".repeat(depth);
+	String finalStr = String.format("%sFact(%d) * %d", space, n - 1, n);
+	System.out.println(finalStr);
+        result = fact(n - 1, depth+1) * n;
+        return result;
+    }
+    
+    public static void main(String[] args) {
+	System.out.println("Main");
+	System.out.println("Factorial of number is "+SimpleFunction.fact(3, 1));
+    }
+}
+#+end_src
+
+- Let's see one bit complex, Fibonacci
+
+#+begin_src java
+  public class SimpleFunction {
+    static int Fib(int N, int depth)
+    {
+        if (N == 0 || N == 1)
+            return N;
+	String space = "  ".repeat(depth);
+	System.out.println(String.format("%sFib(%d)", space, N - 1));
+	int res1 = Fib(N - 1, depth+1);
+	System.out.println(String.format("%sFib(%d)", space, N - 2));
+	int res2 = Fib(N - 2, depth+1);
+        return res1 + res2;
+    }
+    
+    public static void main(String[] args) {
+	System.out.println("Main");
+	System.out.println("Fib of number is "+SimpleFunction.Fib(5, 1));
+    }
+}
+#+end_src
+
+#+begin_example
+Main
+  Fib(4)
+    Fib(3)
+      Fib(2)
+        Fib(1)
+        Fib(0)
+      Fib(1)
+    Fib(2)
+      Fib(1)
+      Fib(0)
+  Fib(3)
+    Fib(2)
+      Fib(1)
+      Fib(0)
+    Fib(1)
+#+end_example
+
+- Another way to visualize it
+
+[[file:assets/fib_tree.jpeg]]
