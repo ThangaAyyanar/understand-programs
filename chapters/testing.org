@@ -1,0 +1,5 @@
+* Testing
+
+This chapter uses Junit to testing from command line.
+
+- https://www.appsdeveloperblog.com/run-junit-tests-from-command-line/
