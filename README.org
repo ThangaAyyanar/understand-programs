@@ -20,6 +20,8 @@ little book about understanding programming
 - [[file:chapters/repl.org][REPL]]
 - [[file:chapters/testing.org][Testing]]
 - Profiling
+  - Java VisualVM
+  - https://en.wikipedia.org/wiki/JDK_Mission_Control
 
 ** Misc
 - Block coding (scratch)
