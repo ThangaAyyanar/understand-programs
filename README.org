@@ -18,7 +18,7 @@ little book about understanding programming
 - [[file:chapters/debugging.org][Debugging]]
 - [[file:chapters/documentation.org][Documentation]]
 - [[file:chapters/repl.org][REPL]]
-- Testing
+- [[file:chapters/testing.org][Testing]]
 - Profiling
 
 ** Misc
