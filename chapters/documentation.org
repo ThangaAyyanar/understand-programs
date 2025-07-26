@@ -1,8 +1,30 @@
 * Documentation
 
+Before writing any code, it's a good idea to read the documentation. It’s like a user manual—it tells you what tools are
+available, how to use them properly, and what to avoid. Reading it can save you time, help you avoid mistakes, and guide you
+in building things the right way. Just like you'd read the instructions before using a new gadget,
+reading the docs before coding makes everything smoother and easier.
+
+* But can’t we just use AI tools?
+
+Before AI became common, developers used to search through documentation, Stack Overflow, and other websites.
+We didn’t always find direct answers, but along the way, we learned many related concepts and found better solutions.
+Now, with AI tools, we often get straight answers quickly—but that sometimes means we miss out on learning the bigger picture.
+
+AI tools are definitely helpful for quick explanations or when you're stuck. But documentation gives you accurate, up-to-date,
+and complete information directly from the source. It explains not just how something works, but why it works that way.
+It also covers rare situations, limitations, and best practices.
+
+So, it’s best to start with the docs to build a solid understanding, and then use AI as a helpful assistant when you need
+extra guidance.
+
 - Official documentation
   - https://docs.oracle.com/en/java/javase/17/docs/api/
 - Devdocs
   - https://devdocs.io/openjdk~17/
   - https://devdocs.io/openjdk~17/java.base/java/lang/system#out
 - Javadoc command
+  - Javadoc is a tool used in Java to generate documentation from specially formatted comments in your code.
+  - https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html
+
+
